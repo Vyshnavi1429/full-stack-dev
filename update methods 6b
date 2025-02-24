@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output display methods </title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>output display methods</h1>
+    
+
+    <button onclick="alertWithWindow()">alert method</button>
+    
+    <script>
+        function alertWithWindow(){
+            window.alert("text in alert")
+        }
+    </script>
+
+<button onclick="documentWrite()">document to write</button>
+    
+<script>
+    function documentWrite(){
+        document.write("document to write method")
+    }
+</script>
+<button onclick="consoleWrite()">console log</button>
+<script>
+    function consoleWrite() {
+          console.log("displaying output on console");
+    }
+</script>
+<button onclick="updateInnerHtml()">update Ineer html</button>
+<script>
+    function updateInnerHtml(){
+        document.getElementById("demo").innerHTML = "<h3>Hello JavaScript!</h3>";
+    }
+</script>
+
+<div id="demo"></div>
+
+</body>
